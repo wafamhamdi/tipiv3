@@ -17,7 +17,7 @@ let response = {
     data: [],
    
 };
-var uri= 'mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/tipigit';
+var uri= 'mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/';
 MongoClient.connect(uri, function (err, client) {
   if (err) throw err;
 
