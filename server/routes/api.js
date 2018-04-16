@@ -17,23 +17,23 @@ let response = {
     data: [],
    
 };
-/*mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/tipigit
-var uri= 'mongodb://wafamhamdi:wafawafa20@ds145283.mlab.com:45283/tipigit';
+//mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/tipigit
+var uri= 'mongodb://tipigit:tipigit@ds145283.mlab.com:45283/tipigit';
 MongoClient.connect(uri, function (err, client) {
   if (err) throw err;
+  var db = client.db('tipigit');
+});
+//var mongoose = require('mongoose');
 
-  var db = client.db('tipigit');*/
-  var mongoose = require('mongoose');
-
-var mongoDB = "mongodb://tipi:tipi@ds241489.mlab.com:41489/tipigit";
+/*var mongoDB = "mongodb://tipi:tipi@ds241489.mlab.com:41489/tipigit";
 
 mongoose.connect(mongoDB, {
     useMongoClient: true
 });
 
-var db = mongoose.connection;
+var db = mongoose.connection;*/
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+//db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Get project
 router.get('/project', (req, res) => {
