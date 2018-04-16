@@ -17,8 +17,8 @@ let response = {
     data: [],
    
 };
-
-MongoClient.connect('./config/mongo_uri:process.env.mongo_uri', function (err, client) {
+var uri= 'mongodb://wafamhamdi:wafamhamdi19/08/1994@ds145283.mlab.com:45283/tipigit';
+MongoClient.connect(uri, function (err, client) {
   if (err) throw err;
 
   var db = client.db('tipigit');
