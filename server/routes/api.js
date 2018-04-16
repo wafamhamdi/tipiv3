@@ -3,14 +3,6 @@ const router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectID;
 
-// Connect
-/*const connection = (closure) => {
-    return MongoClient.connect('mongodb://localhost:27017/database', (err, db) => {
-        if (err) return console.log(err);
-
-        closure(db);
-    });
-};*/
 
 // Error handling
 const sendError = (err, res) => {
@@ -26,10 +18,10 @@ let response = {
    
 };
 
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('./config/mongo_uri:process.env.mongo_uri', function (err, client) {
   if (err) throw err;
 
-  var db = client.db('database');
+  var db = client.db('tipigit');
 
 // Get project
 router.get('/project', (req, res) => {
