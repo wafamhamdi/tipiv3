@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const http = require('http');
@@ -49,9 +49,9 @@ app.set('port', port);
 
 const server = http.createServer(app);
 
-server.listen(port, () => console.log(`Running on localhost:${port}`));*/
+server.listen(port, () => console.log(`Running on localhost:${port}`));
 
-var express = require('express');
+/*var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var routes = require("./server/routes");
@@ -66,13 +66,13 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use("/api",routes);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 
 // Initialize the app.
   var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
-  });
+  });*/
 
 module.exports = app;
