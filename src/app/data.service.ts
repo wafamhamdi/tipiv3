@@ -18,15 +18,15 @@ export class DataService {
   constructor(private _http: Http) { }
 
   getProject() {
-    return this._http.get("http://localhost:3000/api/project")
+    return this._http.get("./api/project")
       .map(result=> this.resultProject = this.resultProject.json().data);
   }
   getPersonal() {
-    return this._http.get("http://localhost:3000/api/personal")
+    return this._http.get("./api/personal")
       .map(result => this.resultPersonal = this.resultPersonal.json().data);
   }
   getReport() {
-    return this._http.get("http://localhost:3000/api/report")
+    return this._http.get("./api/report")
       .map(result => this.resultReport = this.resultReport.json().data);
   }
 
