@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const http = require('http');
@@ -6,7 +6,7 @@ const app = express();
 // Add headers
 app.use(function (req, res, next) {
 
-    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'text/html');
     // Website you wish to allow to connect
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Allow-Control-Allow-Origin', '*');
@@ -49,4 +49,30 @@ app.set('port', port);
 
 const server = http.createServer(app);
 
-server.listen(port, () => console.log(`Running on localhost:${port}`));
+server.listen(port, () => console.log(`Running on localhost:${port}`));*/
+
+var express = require('express');
+var path = require('path');
+var bodyParser = require('body-parser');
+var routes = require("./server/routes");
+
+var app = express();
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, 'dist')));
+
+app.use("/api",routes);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
+// Initialize the app.
+  var server = app.listen(process.env.PORT || 8080, function () {
+    var port = server.address().port;
+    console.log("App now running on port", port);
+  });
+
+module.exports = app;
