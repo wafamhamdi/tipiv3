@@ -21,7 +21,7 @@ let response = {
 //mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/tipigit
 var uri= 'mongodb://tipigit:tipigit@ds145283.mlab.com:45283/tipigit';
 //=======
-var uri= 'mongodb://wafamhamdi:wafawafa20@ds145283.mlab.com:45283/';
+
 //>>>>>>> 48905567104fbbf7a1222971e761c501c1cf3f3b
 MongoClient.connect(uri, function (err, client) {
   if (err) throw err;
@@ -69,6 +69,7 @@ router.get('/personal', (req, res) => {
         .catch((err) => {
             sendError(err, res);
         });
+ 
 });
 // Get task
 router.get('/task', (req, res) => {
