@@ -3,22 +3,198 @@
 <head>
   <meta charset="utf-8">
   <title>Ang</title>
-  <base href=".">
+  <base href="./">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#333">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="shortcut icon" href="assets/img/favicon.png?v=3">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="shortcut icon" href="./assets/img/favicon.png?v=3">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="assets/css/preload.min.css">
-  <link rel="stylesheet" href="assets/css/plugins.min.css">
-  <link rel="stylesheet" href="assets/css/style.deep-orange-600.min.css">
+  <link rel="stylesheet" href="./assets/css/preload.min.css">
+  <link rel="stylesheet" href="./assets/css/plugins.min.css">
+  <link rel="stylesheet" href="./assets/css/style.deep-orange-600.min.css">
 
 </head>
 <body>
-  
-  <app-root></app-root>
+  <body >
+    <!-- start preloader -->
+       <div id="loader-wrapper">
+           <div class="logo"></div>
+           <div id="loader">
+           </div>
+       </div>
+       <!-- end preloader -->
+       <!--[if lt IE 8]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your bro1wser</a> to improve your experience.</p>
+       <![endif]-->
+
+
+
+<app-root style=""></app-root>
+
+<!-- start contact us Section -->
+<section id="ctn_sec">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+       <div class="title_sec">
+         <h1>Contact Info</h1>
+         <h2>WE’RE BRANDING & DIGITAL STUDIO FROM VIET NAM</h2>
+       </div>
+     </div>
+     <div class="col-sm-6">
+       <div id="cnt_form">
+         <form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
+           <div class="form-group">
+           <input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
+           </div>
+           <div class="form-group">
+             <input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
+           </div>
+           <div class="form-group">
+             <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+           </div>
+           <div class="form-group">
+             <button type="submit" class="btn btn-primary">Send</button>
+           </div>
+         </form>
+       </div>
+     </div>
+     <div class="col-lg-6 col-md-6 col-sm-6">
+       <div class="cnt_info">
+         <ul>
+           <li><i class="fa fa-facebook"></i><p>121 King Street, Melbourne Victoria 3000 Australia</p></li>
+           <li><i class="fa fa-envelope"></i><p>contact@info.com</p></li>
+           <li><i class="fa fa-phone"></i><p>+0987654321 (+012345678)</p></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+<!-- End contact us  Section -->
+<!-- start footer Section -->
+<footer id="ft_sec">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-12">
+       <div class="ft">
+         <ul>
+           <li><a href=""><i class="fa fa-facebook"></i></a></li>
+           <li><a href=""><i class="fa fa-twitter"></i></a></li>
+           <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+           <li><a href=""><i class="fa fa-rss"></i></a></li>
+           <li><a href=""><i class="fa fa-flickr"></i></a></li>
+           <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+           <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+           <li><a href=""><i class="fa fa-skype"></i></a></li>
+           <li><a href=""><i class="fa fa-google"></i></a></li>
+         </ul>
+       </div>
+       <ul class="copy_right">
+         <li>&copy;Sima 2015</li>
+         <li>developer by md. shiddikur rahman</li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</footer>
+<!-- End footer Section -->
+
+
+<script>
+
+ //Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+   $("body").css("overflow", "hidden");
+});
+
+// Show Overflow of Body when Everything has Loaded
+$(window).load(function(){
+   $("body").css("overflow", "visible");
+   var nice=$('html').niceScroll({
+ cursorborder:"5",
+ cursorcolor:"#00AFF0",
+ cursorwidth:"3px",
+ boxzoom:true,
+ autohidemode:true
+ });
+
+});
+</script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+       <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/showHide.js"></script>
+<script src="assets/js/jquery.nicescroll.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/scrolling-nav.js"></script>
+<script src="assets/js/plugins.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/showHide.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+  $('.show_hide').showHide({
+   speed: 1000,  // speed you want the toggle to happen
+   easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+   changeText: 1, // if you dont want the button text to change, set this to 0
+   showText: 'View',// the button text to show when a div is closed
+   hideText: 'Close' // the button text to show when a div is open
+
+ });
+
+
+});
+
+</script>
+<script>
+   jQuery(document).ready(function( $ ) {
+       $('.counter').counterUp({
+           delay: 10,
+           time: 1000
+       });
+   });
+</script>
+
+<script>
+
+ //Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+   $("body").css("overflow", "hidden");
+});
+
+// Show Overflow of Body when Everything has Loaded
+$(window).load(function(){
+   $("body").css("overflow", "visible");
+   var nice=$('html').niceScroll({
+ cursorborder:"5",
+ cursorcolor:"#00AFF0",
+ cursorwidth:"3px",
+ boxzoom:true,
+ autohidemode:true
+ });
+
+});
+</script>
+
+
+   </body>
+</html>
+
 </body>
 </html>
