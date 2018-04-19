@@ -39,7 +39,7 @@ var db = mongoose.connection;*/
 //db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Get project
-/*
+
 router.get('/project', (req, res) => {
         db.collection('project')
             .find()
@@ -106,6 +106,6 @@ router.get('report', (req, res) => {
         .catch((err) => {
             sendError(err, res);
         });
-});*/
+});
 
 module.exports = router;
