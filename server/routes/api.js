@@ -19,12 +19,12 @@ let response = {
 };
 
 //mongodb://wafamhamdi:wafamhamdi19@ds145283.mlab.com:45283/tipigit
-var uri= 'mongodb://tipigit:tipigit@ds145283.mlab.com:45283/tipigit';
+var uri= 'mongodb://tipigit:tipigit@ds145283.mlab.com:45283';
 
 
 MongoClient.connect(uri, function (err, client) {
   if (err) throw err;
-  var db = client.db('tipigit');
+  var db = client.db('wafa');
 });
 //var mongoose = require('mongoose');
 
@@ -44,6 +44,9 @@ router.get('/project', (req, res) => {
             .find()
             .toArray()
             .then((project) => {
+
+
+
                 /*
                 response.data = project;
                 res.json(response);*/
