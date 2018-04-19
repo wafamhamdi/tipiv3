@@ -1,29 +1,28 @@
 {
   "name": "ang",
-    "version": "0.0.0",
-    "license": "MIT",
-    "scripts": {
-      "ng": "ng",
-      "start": "ng build && node api.js",
-      "build": "ng build",
-      "test": "ng test",
-      "lint": "ng lint",
-      "e2e": "ng e2e",
-      "preinstall": "npm install -g @angular/cli",
-      "postinstall": "ng build --prod"
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng build && node api.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "preinstall": "npm install -g @angular/cli",
+    "postinstall": "ng build --prod"
   },
-
   "engines": {
     "node": "v8.9.4",
     "npm": "5.6.0"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~1.7.3",
-    "@angular/compiler-cli": "^5.2.0",
     "@angular/animations": "^5.2.0",
+    "@angular/cli": "~1.7.3",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/core": "^5.2.0",
     "@angular/forms": "^5.2.0",
     "@angular/http": "^5.2.0",
@@ -39,6 +38,8 @@
     "feedback-to-gitlab": "^1.0.3",
     "git-log": "0.0.1",
     "git-log-to-json": "^1.1.1",
+    "gitlab-webhook": "^0.2.1",
+    "gitlab-webhooker": "^2.2.8",
     "gitlog": "^3.1.2",
     "kafka-node": "^2.5.0",
     "kafka-rest": "0.0.5",
@@ -48,7 +49,6 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-   
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
