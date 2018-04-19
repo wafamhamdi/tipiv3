@@ -41,21 +41,20 @@ var db = mongoose.connection;*/
 // Get project
 
 router.get('/project', (req, res) => {
-        db.collection('project')
+   /*    db.collection('project')
             .find()
             .toArray()
             .then((project) => {
-
-
-
-            
-                response.data = project;
+            response.data = project;
                 res.json(response);
-                console.log(response.data);
+         //       console.log(response.data);
             })
             .catch((err) => {
                 sendError(err, res);
             });
+*/
+            response.data = "wafaaaa";
+            res.json(response);
     });
 
     
@@ -70,7 +69,7 @@ router.get('/personal', (req, res) => {
             response.data = personal;
             res.json(response);
         
-            console.log(response.data);
+        //    console.log(response.data);
         })
         .catch((err) => {
             sendError(err, res);
@@ -86,7 +85,7 @@ router.get('/task', (req, res) => {
             
             response.data = task;
             res.json(response);
-            console.log(response.data);
+          //  console.log(response.data);
         })
         .catch((err) => {
             sendError(err, res);
@@ -101,7 +100,7 @@ router.get('report', (req, res) => {
             
             response.data = report;
             res.json(response);
-            console.log(response.data);
+           // console.log(response.data);
         })
         .catch((err) => {
             sendError(err, res);
