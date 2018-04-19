@@ -14,7 +14,7 @@ const sendError = (err, res) => {
 // Response handling
 let response = {
  
-    data: [],
+    data: []
    
 };
 
