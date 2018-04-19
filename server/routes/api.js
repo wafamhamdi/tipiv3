@@ -39,6 +39,7 @@ var db = mongoose.connection;*/
 //db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Get project
+/*
 router.get('/project', (req, res) => {
         db.collection('project')
             .find()
@@ -47,9 +48,9 @@ router.get('/project', (req, res) => {
 
 
 
-                /*
+            
                 response.data = project;
-                res.json(response);*/
+                res.json(response);
                 console.log(response.data);
             })
             .catch((err) => {
@@ -65,10 +66,10 @@ router.get('/personal', (req, res) => {
         .find()
         .toArray()
         .then((personal) => {
-            /*
+            
             response.data = personal;
             res.json(response);
-            */
+        
             console.log(response.data);
         })
         .catch((err) => {
@@ -82,9 +83,9 @@ router.get('/task', (req, res) => {
         .find()
         .toArray()
         .then((task) => {
-            /*
+            
             response.data = task;
-            res.json(response);*/
+            res.json(response);
             console.log(response.data);
         })
         .catch((err) => {
@@ -97,14 +98,14 @@ router.get('report', (req, res) => {
         .find()
         .toArray()
         .then((report) => {
-            /*
+            
             response.data = report;
-            res.json(response);*/
+            res.json(response);
             console.log(response.data);
         })
         .catch((err) => {
             sendError(err, res);
         });
-});
+});*/
 
 module.exports = router;
