@@ -15,18 +15,24 @@ export class DataService {
 
 
 
-  constructor(private _http: Http) { }
+  constructor(private http: Http) { }
 
   getProject() {
-    return this._http.get("./api/project")
-      .map(result=> this.resultProject = this.resultProject.json().data);
-  }
+    return this.http.get("./api/project")
+      .map(resp => resp.json()).subscribe(data=>{console.log(data)},
+      err=>{
+        console.log(err)
+  
+  
+      })
+    }
+  
   getPersonal() {
-    return this._http.get("./api/personal")
+    return this.http.get("./api/personal")
      .map(result => this.resultPersonal = this.resultPersonal.json().data);
   }
   getReport() {
-    return this._http.get("./api/report") .map(result => this.resultReport = this.resultReport.json().data);
+    return this.http.get("./api/report") .map(result => this.resultReport = this.resultReport.json().data);
   }
 
 }

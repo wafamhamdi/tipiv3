@@ -51,6 +51,7 @@ router.get('/project', (req, res) => {
             
                 response.data = project;
                 res.json(response);
+                
                 console.log(response.data);
             })
             .catch((err) => {
