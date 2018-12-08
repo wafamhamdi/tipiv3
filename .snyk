@@ -1,0 +1,41 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/compiler-cli > chokidar > fsevents > node-pre-gyp > hawk > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/compiler-cli > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > @angular-devkit/core > chokidar > fsevents > node-pre-gyp > hawk > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/compiler-cli > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > @angular-devkit/core > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/compiler-cli > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > @angular-devkit/core > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > @angular-devkit/core > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+    - '@angular/cli > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek':
+        patched: '2018-12-08T10:24:15.685Z'
+  'npm:minimatch:20160620':
+    - feedback-to-gitlab > gitlab > slumber > yamljs > glob > minimatch:
+        patched: '2018-12-08T10:24:15.685Z'
