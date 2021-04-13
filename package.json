@@ -40,7 +40,7 @@
     "git-log-to-json": "^1.1.1",
     "gitlab-webhook": "^0.2.1",
     "gitlab-webhooker": "^2.2.8",
-    "gitlog": "^3.1.2",
+    "gitlog": "^4.0.4",
     "kafka-node": "^2.5.0",
     "kafka-rest": "0.0.5",
     "mongodb": "^3.0.5",
