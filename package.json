@@ -33,7 +33,7 @@
     "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
     "elasticsearch": "^14.2.2",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "express-mongo-db": "^2.0.4",
     "feedback-to-gitlab": "^1.0.3",
     "git-log": "0.0.1",
